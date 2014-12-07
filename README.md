@@ -1,6 +1,9 @@
 To do:
-1 - navigation
-4 - Pure? Bootstrap? Fluid? Should I do it myself?!
+1 - content in partials.
+    - transistion animation?
+    - layout
+2 - simple grid system
+3 - css files for diff screen sizes?
 5 - Pick a color scheme, color.adobe.com
 6 - Is a CMS necessary?
 7 - Contact sheet?
