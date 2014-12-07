@@ -10,3 +10,4 @@ To do:
 7 - Adwords, SEO
 8 - I8n .......... ugh.
 9 - "i'm currently accepting new projects"sorta thing
+10 - cssify in pre-commit hook
