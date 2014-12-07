@@ -1,6 +1,7 @@
 var Hapi = require('hapi');
 var hbs = require('handlebars');
 
+console.log('openshift port: ', process.env.OPENSHIFT_NODEJS_PORT);
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 var server = new Hapi.Server();
 server.connection({ port: port });
@@ -21,4 +22,4 @@ server.route(require('./routes/static.js'));
 server.route(require('./routes/index.js'));
 
 server.start();
-console.log('Iris Web listening on port ' + port);
+console.log(new Date().toString() + ' Iris Web listening on port ' + port);
