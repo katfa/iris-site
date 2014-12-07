@@ -1,35 +1,28 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "iris-web",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+  "description": "\"Personal Website\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "http://www.openshift.com/",
+  "author": {
+    "name": "Kat Aquino",
+    "email": "katfaquino@gmail.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "ssh://54844b0ce0b8cd3c4400006d@iris-katfa.rhcloud.com/~/git/iris.git/"
   },
-
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
-  },
-
+  "license": "ISC",
   "dependencies": {
-    "express": "~3.4.4"
+    "gulp-sass": "^1.2.2",
+    "handlebars": "^2.0.0",
+    "hapi": "^8.0.0-rc2"
   },
-  "devDependencies": {},
-  "bundleDependencies": [],
-
-  "private": true,
-  "main": "server.js"
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-nodemon": "^1.0.4"
+  }
 }
