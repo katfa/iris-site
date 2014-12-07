@@ -30,3 +30,7 @@ gulp.task('dev', ['lint', 'cssify'], function (){
     })
     .on('change', ['lint', 'cssify']);
 });
+
+gulp.task('default', ['lint'], function () {
+    gulp.start('cssify');
+})
