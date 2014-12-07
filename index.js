@@ -1,9 +1,9 @@
 var Hapi = require('hapi');
 var hbs = require('handlebars');
 
-var port = 8000;
+var port = process.env.NODE_ENV === 'local' ? 8000 : 80;
 var server = new Hapi.Server();
-server.connection({ port: 8000 });
+server.connection({ port: port });
 
 // Views Manager
 server.views({

@@ -8,6 +8,7 @@
     function removeActive(el) {
         el.classList.remove('active');
         el.style.borderBottom = "2px solid " + darkGrey;
+        document.querySelector(currentActive.hash).classList.add('hidden');
         currentActive = null;
     }
 
@@ -15,6 +16,7 @@
         el.classList.add('active');
         el.style.borderBottom = "2px solid " + purple;
         currentActive = el;
+        document.querySelector(currentActive.hash).classList.remove('hidden');
     }
 
     function addNavListeners() {

@@ -95,3 +95,6 @@ h1 {
 
 .active {
   color: #06CF1E; }
+
+.hidden {
+  display: none; }
