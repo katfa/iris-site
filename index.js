@@ -1,10 +1,12 @@
 var Hapi = require('hapi');
 var hbs = require('handlebars');
 
-console.log('openshift port: ', process.env.OPENSHIFT_NODEJS_PORT);
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 var server = new Hapi.Server();
-server.connection({ port: port });
+server.connection({
+    host: process.env.OPENSHIFT_NODEJS_IP || 'localhost',
+    port: port
+});
 
 // Views Manager
 server.views({
