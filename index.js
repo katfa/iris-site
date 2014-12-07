@@ -1,7 +1,7 @@
 var Hapi = require('hapi');
 var hbs = require('handlebars');
 
-var port = process.env.NODE_ENV === 'local' ? 8000 : 80;
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 var server = new Hapi.Server();
 server.connection({ port: port });
 
