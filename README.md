@@ -4,10 +4,9 @@ To do:
     - layout
 2 - simple grid system
 3 - css files for diff screen sizes?
-5 - Pick a color scheme, color.adobe.com
-6 - Is a CMS necessary?
-7 - Contact sheet?
-8 - hosting. OpenShift for now
-9 - Adwords, SEO
-10 - I8n .......... ugh.
-11 - "i'm currently accepting new projects"sorta thing
+4 - Pick a color scheme, color.adobe.com
+5 - Is a CMS necessary?
+6 - Contact sheet?
+7 - Adwords, SEO
+8 - I8n .......... ugh.
+9 - "i'm currently accepting new projects"sorta thing
