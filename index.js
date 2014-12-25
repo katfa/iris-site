@@ -22,6 +22,7 @@ server.views({
 // Routes
 server.route(require('./routes/static.js'));
 server.route(require('./routes/index.js'));
+server.route(require('./routes/sendmail.js'));
 
 server.start();
 console.log(new Date().toString() + ' Iris Web listening on port ' + port);

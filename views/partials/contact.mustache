@@ -15,19 +15,19 @@
     <div class="col span_2_of_7">&nbsp;</div>
     <div class="col span_5_of_7 mln">
 
-        <form id="contact-form" method="POST" action="/send-mail">
+        <form id="contact-form" method="POST" action="/send">
             <div class="input pbs">
-                <label for="email">Your e-mail:</label>
-                <input type="email" name="email" id="email"></input>
+                <label for="email" class="pbs">Your e-mail:</label>
+                <input type="email" name="email" id="email" size="40" class="mbm"></input>
             </div>
 
             <div class="input pbl">
-                <label for="message">Message:</label>
+                <label for="message" class="pbs">Message:</label>
                 <textarea rows="20" cols="60" name="message" id="message"></textarea>
             </div>
 
             <div class="input">
-                <button type="button">Send!</button>
+                <button id="send-button">Send</button>
             </div>
         </form>
     </div>

@@ -69,8 +69,33 @@ nav {
   width: 22px;
   position: fixed;
   top: 5px;
-  right: 10px; }
+  right: 10px;
+  cursor: pointer;
+  cursor: hand;
+  display: block; }
 
+#availability {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  width: 140px;
+  min-height: 80px;
+  height: auto;
+  box-shadow: 0 0 15px #C1C1C1;
+  background-color: #F1F1F1; }
+  #availability h2 {
+    font-size: 0.9em; }
+  #availability h3 {
+    font-weight: 200;
+    color: #383838;
+    font-size: 0.8em; }
+  #availability h4 {
+    font-weight: 200;
+    color: #383838;
+    font-size: 0.7em; }
+
+/* ---------------------------------------------------------------------------------- */
 /* Large desktop */
 @media (min-width: 1200px) {
   #menu-icon {
@@ -301,6 +326,19 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 /* --- FORM --- */
 .input label {
   display: block; }
+
+#send-button {
+  padding: 10px 20px 10px 20px;
+  background: #A204E0;
+  border: 1px solid #A204E0;
+  color: white;
+  font-size: 1em;
+  box-shadow: 0 0 8px rgba(121, 121, 121, 0.8); }
+
+#send-button:hover {
+  color: #06CF1E;
+  cursor: pointer;
+  cursor: hand; }
 
 /*  SECTIONS  */
 .section {

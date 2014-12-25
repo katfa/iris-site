@@ -95,7 +95,43 @@ nav {
     position: fixed;
     top: 5px;
     right: 10px;
+    cursor: pointer;
+    cursor: hand;
+    display: block;
 }
+
+#availability {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    width: 140px;
+    min-height: 80px;
+    height:auto;
+    box-shadow: 0 0 15px #C1C1C1;
+    background-color: #F1F1F1;
+
+    h2 {
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-weight: 200;
+        color: $dark-grey;
+        font-size: 0.8em;
+    }
+
+    h4 {
+        font-weight: 200;
+        color: $dark-grey;
+        font-size: 0.7em;
+    }
+
+}
+
+
+
+/* ---------------------------------------------------------------------------------- */
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -271,6 +307,21 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     label {
         display: block;
     }
+}
+
+#send-button {
+    padding: 10px 20px 10px 20px;
+    background: $purple;
+    border: 1px solid $purple;
+    color: white;
+    font-size: 1em;
+    box-shadow: 0 0 8px rgba(121, 121, 121, 0.8)
+}
+
+#send-button:hover {
+    color: $green;
+    cursor: pointer;
+    cursor: hand;
 }
 
 /*  SECTIONS  */
