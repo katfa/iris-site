@@ -2,6 +2,9 @@
     window.addEventListener("DOMContentLoaded", addNavListeners);
 
     var homeContent = document.getElementById('home-content');
+    var menuList = document.getElementById('menu-list');
+    var menuIcon = document.getElementById('menu-icon');
+    var showingMenuList = true;
     var currentActive;
     var purple = '#A204E0';
     var darkGrey = '#383838';
@@ -28,6 +31,27 @@
         homeContent.classList.add('hidden');
     }
 
+    function showMenuList () {
+        menuList.style.display = "block";
+        showingMenuList = true;
+    }
+
+    function hideMenuList () {
+        menuList.style.display = "none";
+        showingMenuList = false;
+    }
+
+    function toggleMenuList () {
+
+        if (showingMenuList) {
+            console.log('hiding menu list');
+            hideMenuList();
+        } else {
+            console.log('showing menu list');
+            showMenuList();
+        }
+    }
+
     function addNavListeners() {
         var lis = document.querySelectorAll('nav > ul > li');
         [].forEach.call(lis, function (l) {
@@ -43,6 +67,12 @@
                 hideHomeContent();
             });
         });
+
+
+        if (menuIcon) {
+            showingMenuList = false;
+            menuIcon.addEventListener('click', toggleMenuList);
+        }
     }
 
 })();
