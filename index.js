@@ -4,7 +4,7 @@ var hbs = require('handlebars');
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 var server = new Hapi.Server();
 server.connection({
-    host: process.env.OPENSHIFT_NODEJS_IP || 'localhost',
+    host: process.env.OPENSHIFT_NODEJS_IP || '192.168.1.111',
     port: port
 });
 

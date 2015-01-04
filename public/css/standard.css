@@ -6,7 +6,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   font: 100% 'Lato', sans-serif;
@@ -21,7 +21,6 @@ header {
   display: block; }
 
 .main-content {
-  width: 60%;
   height: auto;
   margin: 0 auto; }
 
@@ -46,7 +45,6 @@ nav {
     width: 22px; }
   nav ul {
     list-style: none;
-    width: 68%;
     margin: 0 auto;
     text-align: center;
     padding: 0; }
@@ -64,14 +62,13 @@ nav {
         color: #06CF1E; }
 
 #menu-icon {
-  z-index: 100;
+  z-index: 500;
   width: 22px;
   position: fixed;
   top: 5px;
   right: 10px;
   cursor: pointer;
-  cursor: hand;
-  display: block; }
+  cursor: hand; }
 
 #availability {
   position: fixed;
@@ -299,7 +296,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 .col {
   display: block;
   float: left;
-  margin: 1% 0 1% 1.6%; }
+  margin: 0; }
 
 .col:first-child {
   margin-left: 0; }
@@ -370,40 +367,110 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 /* ---------------------------------------------------------------------------------- */
 /* Large desktop */
 @media (min-width: 1200px) {
+  .main-content {
+    padding-top: 5%;
+    width: 60%; }
+
   .show-mobile {
     display: none; }
 
-  #menu-icon {
-    display: none; }
+  nav ul {
+    width: 70%; }
+
+  .small-circle {
+    margin-left: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
+    overflow: hidden;
+    float: left; }
+    .small-circle img {
+      width: 160px;
+      height: auto; }
  }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1199px) {
+  .main-content {
+    padding-top: 7%;
+    width: 70%; }
+
   .show-mobile {
     display: none; }
 
-  #menu-icon {
-    display: none; }
+  nav ul {
+    width: 80%; }
+
+  .small-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
+    overflow: hidden;
+    float: left; }
+    .small-circle img {
+      width: 140px;
+      height: auto; }
  }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   .show-mobile {
+    display: block; }
+
+  .hide-mobile {
     display: none; }
 
   .main-content {
-    padding-top: 10%; }
+    width: 80%;
+    padding-top: 10%;
+    position: relative; }
 
   nav {
-    height: 30px; }
+    z-index: 100; }
     nav ul {
       width: 100%;
       background-color: #383838; }
       nav ul li {
         width: 100%; }
 
-  #menu-list {
-    display: none; }
+  .small-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
+    overflow: hidden;
+    float: left; }
+    .small-circle img {
+      width: 120px;
+      height: auto; }
+
+  .small-titles {
+    margin-left: 3%; }
+
+  #availability {
+    position: relative;
+    margin-top: 30px;
+    right: 0;
+    width: 100%;
+    min-height: 45px;
+    background-color: #F1F1F1;
+    padding-top: 5px; }
+    #availability h3, #availability h4 {
+      display: inline;
+      padding-left: 3%;
+      padding-right: 3%; }
+    #availability h2 {
+      font-size: 0.8em; }
+    #availability h3 {
+      font-weight: 200;
+      color: #383838;
+      font-size: 0.7em; }
+    #availability h4 {
+      font-weight: 200;
+      color: #383838;
+      font-size: 0.7em; }
  }
 
 /* Landscape phones and down */
@@ -425,7 +492,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 
   nav {
     height: 30px;
-    z-index: 500; }
+    z-index: 100; }
     nav ul {
       width: 100%;
       background-color: #383838; }
@@ -446,7 +513,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
   .small-circle {
     width: 90px;
     height: 90px;
-    border-radius: 75px;
+    border-radius: 45px;
     box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
     overflow: hidden;
     float: left; }
@@ -458,7 +525,8 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     font-size: 1.6em; }
 
   .titles h2 {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    font-weight: 300; }
 
   .small-titles {
     width: 60%;
@@ -470,7 +538,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 
   #availability {
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     right: 0;
     width: 100%;
     min-height: 50px;
@@ -478,11 +546,11 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     #availability h2 {
       font-size: 0.7em; }
     #availability h3 {
-      font-weight: 200;
+      font-weight: 300;
       color: #383838;
       font-size: 0.7em; }
     #availability h4 {
-      font-weight: 200;
+      font-weight: 300;
       color: #383838;
       font-size: 0.7em;
       margin-bottom: 5px; }

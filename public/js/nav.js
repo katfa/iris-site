@@ -4,8 +4,6 @@
     var homeContent = document.getElementById('home-content');
     var menuList = document.getElementById('menu-list');
     var menuIcon = document.getElementById('menu-icon');
-    var menuDisplay = window.getComputedStyle(menuIcon);
-    var menuIconVisible = menuDisplay.getPropertyValue('display') === 'block';
     var showingMenuList = true;
     var currentActive;
     var purple = '#A204E0';
@@ -23,9 +21,14 @@
         el.style.borderBottom = "2px solid " + purple;
         currentActive = el;
         document.querySelector(currentActive.hash).classList.remove('hidden');
-        if (menuIconVisible) {
+        if (isMenuIconVisible()) {
             hideMenuList();
         }
+    }
+
+    function isMenuIconVisible() {
+        var style = window.getComputedStyle(menuIcon);
+        return style.display === 'block';
     }
 
     function showHomeContent () {
@@ -72,10 +75,24 @@
             });
         });
 
-        if (menuIconVisible) {
-            showingMenuList = false;
+        if (isMenuIconVisible()) {
+            console.log('hiding menu list in addNavListeners');
+            hideMenuList();
             menuIcon.addEventListener('click', toggleMenuList);
         }
     }
+
+    window.addEventListener('resize', function () {
+        if (!isMenuIconVisible()) {
+            showMenuList();
+            menuIcon.removeEventListener('click', toggleMenuList);
+        }
+        if (isMenuIconVisible()) {
+            console.log('hiding menu list in resize');
+            hideMenuList();
+            menuIcon.addEventListener('click', toggleMenuList);
+        }
+    });
+
 
 })();
