@@ -23,8 +23,7 @@ header {
 .main-content {
   width: 60%;
   height: auto;
-  margin: 0 auto;
-  padding-top: 5%; }
+  margin: 0 auto; }
 
 .other-content {
   margin: 0 auto; }
@@ -78,7 +77,6 @@ nav {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  text-align: center;
   width: 140px;
   min-height: 80px;
   height: auto;
@@ -95,60 +93,12 @@ nav {
     color: #383838;
     font-size: 0.7em; }
 
-/* ---------------------------------------------------------------------------------- */
-/* Large desktop */
-@media (min-width: 1200px) {
-  #menu-icon {
-    display: none; }
- }
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
-  #menu-icon {
-    display: none; }
- }
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  .main-content {
-    padding-top: 10%; }
-
-  nav {
-    height: 30px; }
-    nav ul {
-      width: 100%;
-      background-color: #383838; }
-      nav ul li {
-        width: 100%; }
-
-  #menu-list {
-    display: none; }
- }
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  .main-content {
-    padding-top: 10%; }
-
-  nav {
-    height: 30px; }
-    nav ul {
-      width: 100%;
-      background-color: #383838; }
-      nav ul li {
-        width: 100%; }
-
-  #menu-list {
-    display: none; }
- }
-
 .active {
   color: #06CF1E; }
 
 .titles {
   display: inline-block;
-  padding-left: 1.5em;
-  text-align: justify; }
+  padding-left: 1.5em; }
   .titles h1 {
     margin: 0; }
   .titles h2 {
@@ -167,8 +117,10 @@ nav {
     font-size: 0.95em; }
 
 .circle {
+  vertical-align: middle;
+  height: auto;
   width: 300px;
-  height: 300px;
+  max-width: 80%;
   border-radius: 150px;
   box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
   overflow: hidden; }
@@ -187,10 +139,7 @@ h1 {
 
 .centered {
   text-align: center;
-  margin: auto; }
-
-.big-font {
-  font-size: 2em; }
+  margin: 0 auto; }
 
 .italic {
   font-style: italic; }
@@ -416,4 +365,128 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 
   .span_1_of_7 {
     width: 100%; }
+ }
+
+/* ---------------------------------------------------------------------------------- */
+/* Large desktop */
+@media (min-width: 1200px) {
+  .show-mobile {
+    display: none; }
+
+  #menu-icon {
+    display: none; }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .show-mobile {
+    display: none; }
+
+  #menu-icon {
+    display: none; }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .show-mobile {
+    display: none; }
+
+  .main-content {
+    padding-top: 10%; }
+
+  nav {
+    height: 30px; }
+    nav ul {
+      width: 100%;
+      background-color: #383838; }
+      nav ul li {
+        width: 100%; }
+
+  #menu-list {
+    display: none; }
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .show-mobile {
+    display: block; }
+
+  .hide-mobile {
+    display: none; }
+
+  .main-content {
+    width: 95%;
+    position: relative;
+    padding-top: 13%;
+    font: 80% 'Lato', sans-serif; }
+
+  .other-content {
+    position: relative; }
+
+  nav {
+    height: 30px;
+    z-index: 500; }
+    nav ul {
+      width: 100%;
+      background-color: #383838; }
+      nav ul li {
+        width: 100%; }
+
+  #menu-list {
+    display: none; }
+
+  .circle {
+    vertical-align: middle;
+    height: auto;
+    max-width: 250px;
+    border-radius: 150px;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
+    overflow: hidden; }
+
+  .small-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 75px;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.7);
+    overflow: hidden;
+    float: left; }
+    .small-circle img {
+      width: 90px;
+      height: auto; }
+
+  .big-font {
+    font-size: 1.6em; }
+
+  .titles h2 {
+    font-size: 1.3em; }
+
+  .small-titles {
+    width: 60%;
+    margin-left: 10px; }
+    .small-titles h1 {
+      font-size: 1.3em; }
+    .small-titles h2 {
+      font-size: 0.8em; }
+
+  #availability {
+    position: relative;
+    margin-top: 30px;
+    right: 0;
+    width: 100%;
+    min-height: 50px;
+    background-color: #F1F1F1; }
+    #availability h2 {
+      font-size: 0.7em; }
+    #availability h3 {
+      font-weight: 200;
+      color: #383838;
+      font-size: 0.7em; }
+    #availability h4 {
+      font-weight: 200;
+      color: #383838;
+      font-size: 0.7em;
+      margin-bottom: 5px; }
+
+  input[type=email], textarea {
+    width: 95%; }
  }

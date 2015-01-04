@@ -7,14 +7,14 @@
         {{> nav }}
     </header>
 
-    <div class="main-content pll prl">
+    <div class="main-content">
         <div id="home-content">
             <div class="centered">
-                <img class="circle" src="/files/img/main.jpg" style="max-width: 100%; height: auto; vertical-align:middle" />
+                <img class="circle" src="/files/img/main.jpg" />
 
                 <div class="titles">
                     <h1>Iris Alm Faleide</h1>
-                    <h2>Translator extraordinaire</h2>
+                    <h2>Native Norwegian Translator</h2>
                 </div>
             </div>
 
@@ -34,11 +34,8 @@
 
     </div>
 
-    <div id="availability" class="pls prs">
-        <h2 class="mts mbs">Available for work!</h2>
-        <h3 class="mts mbn">Current location:<span class="italic"> Norway </span></h3>
-        <h4 class="mts">Time: {{ time }}</script></h4>
-    </div>
+    {{> availability}}
 </body>
 <script type="text/javascript" src="/files/js/nav.js"></script>
+<script type="text/javascript" src="/files/js/time.js"></script>
 </html>

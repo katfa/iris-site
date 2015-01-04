@@ -56,21 +56,21 @@
     }
 
     function addNavListeners() {
-        var lis = document.querySelectorAll('nav > ul > li');
-        [].forEach.call(lis, function (l) {
-            l.addEventListener('click', function (ev) {
-                var a = ev.target;
+        var as = document.querySelectorAll('nav > ul > li > a');
+        [].forEach.call(as, function (a) {
+            a.addEventListener('click', function (ev) {
+                var targ = ev.target;
 
-                if (currentActive && currentActive !== a) {
+                if (currentActive && currentActive !== targ) {
                     removeActive(currentActive);
-                    addActive(a);
+                    addActive(targ);
                 } else {
-                    addActive(a);
+                    addActive(targ);
                 }
                 hideHomeContent();
+                ev.preventDefault();
             });
         });
-
 
         if (menuIconVisible) {
             showingMenuList = false;
