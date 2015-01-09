@@ -76,7 +76,6 @@
         });
 
         if (isMenuIconVisible()) {
-            console.log('hiding menu list in addNavListeners');
             hideMenuList();
             menuIcon.addEventListener('click', toggleMenuList);
         }
@@ -88,7 +87,6 @@
             menuIcon.removeEventListener('click', toggleMenuList);
         }
         if (isMenuIconVisible()) {
-            console.log('hiding menu list in resize');
             hideMenuList();
             menuIcon.addEventListener('click', toggleMenuList);
         }

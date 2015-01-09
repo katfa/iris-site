@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Get in touch"
+msgstr "Ta kontakt"
+
+msgid "About"
+msgstr "Om meg"
+
+msgid "Email"
+msgstr "Din e-post"
+
+msgid "Message"
+msgstr "Melding"

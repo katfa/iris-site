@@ -4,6 +4,9 @@ module.exports = {
     path: '/',
     handler: function (req, rep) {
         var time = moment.tz(Date.now(), "Europe/Oslo").format('h:m a z');
-        rep.view('index', {time: time});
+        rep.view('index', {
+        	time: time,
+        	text_locale: req.l10n.selectedLocale.locale
+        });
     }
 };

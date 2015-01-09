@@ -3,7 +3,7 @@
         <img src="/files/img/contact.jpg" />
     </div>
     <div class="small-titles">
-        <h1>Contact me!</h1>
+        <h1>{{gettext "Get in touch"}}</h1>
     </div>
 </div>
 
@@ -16,7 +16,7 @@
     </div>
 
     <div class="small-titles col span_5_of_7">
-        <h1>Contact me!</h1>
+        <h1>{{gettext "Get in touch"}}</h1>
     </div>
 </div>
 
@@ -26,12 +26,17 @@
 
         <form id="contact-form" method="POST" action="/send">
             <div class="input pbs">
-                <label for="email" class="pbs">Your e-mail:</label>
+                <label for="email" class="pbs">{{gettext "Email"}}</label>
                 <input type="email" name="email" id="email" size="40" class="mbm"></input>
             </div>
 
+            <div class="input pbs">
+                <label for="project" class="pbs">Project name (optional):</label>
+                <input type="text" name="project" id="project" size="40" class="mbm"></input>
+            </div>
+
             <div class="input pbl">
-                <label for="message" class="pbs">Message:</label>
+                <label for="message" class="pbs">{{gettext "Message"}}</label>
                 <textarea rows="20" cols="60" name="message" id="message"></textarea>
             </div>
 
