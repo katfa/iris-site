@@ -1,5 +1,6 @@
 /* COLORS */
 /* FONTS */
+/* ---- BASELINE ---- */
 html {
   margin: 0;
   padding: 0; }
@@ -22,13 +23,27 @@ header {
 
 .main-content {
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 0; }
 
 .other-content {
   margin: 0 auto; }
 
+.purple {
+  color: #A204E0; }
+
+.green {
+  color: #06CF1E; }
+
+.light-grey {
+  color: #DADADA; }
+
+.grey {
+  color: #969696; }
+
 nav {
   position: fixed;
+  z-index: 100;
   background-color: #383838;
   width: 100%;
   height: 33px;
@@ -77,8 +92,7 @@ nav {
   width: 140px;
   min-height: 80px;
   height: auto;
-  box-shadow: 0 0 15px #C1C1C1;
-  background-color: #F1F1F1; }
+  background-color: #FAFAFA; }
   #availability h2 {
     font-size: 0.9em; }
   #availability h3 {
@@ -143,6 +157,130 @@ h1 {
 
 .hidden {
   display: none; }
+
+.small-font {
+  font-size: 0.8em; }
+
+.fright {
+  float: right; }
+
+.fleft {
+  float: left; }
+
+.shadow {
+  box-shadow: 0 0 15px #C1C1C1; }
+
+#testimonials {
+  position: relative;
+  z-index: inherit;
+  width: 100%;
+  height: auto; }
+  #testimonials .column {
+    width: 47%;
+    float: right;
+    margin: 0 auto; }
+    #testimonials .column .testimonial {
+      width: auto;
+      height: auto;
+      display: inline-block;
+      background-color: white; }
+      #testimonials .column .testimonial .quote {
+        font-size: 0.9em; }
+
+/* --- FORM --- */
+.input label {
+  display: block; }
+
+#send-button {
+  padding: 10px 20px 10px 20px;
+  background: #A204E0;
+  border: 1px solid #A204E0;
+  color: white;
+  font-size: 1em;
+  box-shadow: 0 0 8px rgba(121, 121, 121, 0.8); }
+
+#send-button:hover {
+  color: #06CF1E;
+  cursor: pointer;
+  cursor: hand; }
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 0; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before, .group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID OF SEVEN  */
+.span_7_of_7 {
+  width: 100%; }
+
+.span_6_of_7 {
+  width: 85.48%; }
+
+.span_5_of_7 {
+  width: 70.97%; }
+
+.span_4_of_7 {
+  width: 56.45%; }
+
+.span_3_of_7 {
+  width: 41.94%; }
+
+.span_2_of_7 {
+  width: 27.42%; }
+
+.span_1_of_7 {
+  width: 12.91%; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+ }
+
+@media only screen and (max-width: 480px) {
+  .span_7_of_7 {
+    width: 100%; }
+
+  .span_6_of_7 {
+    width: 100%; }
+
+  .span_5_of_7 {
+    width: 100%; }
+
+  .span_4_of_7 {
+    width: 100%; }
+
+  .span_3_of_7 {
+    width: 100%; }
+
+  .span_2_of_7 {
+    width: 100%; }
+
+  .span_1_of_7 {
+    width: 100%; }
+ }
 
 /* spacing helpers
 p,m = padding,margin
@@ -269,101 +407,6 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 .mll, .mhl, .mal {
   margin-left: 20px !important; }
 
-/* --- FORM --- */
-.input label {
-  display: block; }
-
-#send-button {
-  padding: 10px 20px 10px 20px;
-  background: #A204E0;
-  border: 1px solid #A204E0;
-  color: white;
-  font-size: 1em;
-  box-shadow: 0 0 8px rgba(121, 121, 121, 0.8); }
-
-#send-button:hover {
-  color: #06CF1E;
-  cursor: pointer;
-  cursor: hand; }
-
-/*  SECTIONS  */
-.section {
-  clear: both;
-  padding: 0px;
-  margin: 0px; }
-
-/*  COLUMN SETUP  */
-.col {
-  display: block;
-  float: left;
-  margin: 0; }
-
-.col:first-child {
-  margin-left: 0; }
-
-/*  GROUPING  */
-.group:before, .group:after {
-  content: "";
-  display: table; }
-
-.group:after {
-  clear: both; }
-
-.group {
-  zoom: 1;
-  /* For IE 6/7 */ }
-
-/*  GRID OF SEVEN  */
-.span_7_of_7 {
-  width: 100%; }
-
-.span_6_of_7 {
-  width: 85.48%; }
-
-.span_5_of_7 {
-  width: 70.97%; }
-
-.span_4_of_7 {
-  width: 56.45%; }
-
-.span_3_of_7 {
-  width: 41.94%; }
-
-.span_2_of_7 {
-  width: 27.42%; }
-
-.span_1_of_7 {
-  width: 12.91%; }
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%; }
- }
-
-@media only screen and (max-width: 480px) {
-  .span_7_of_7 {
-    width: 100%; }
-
-  .span_6_of_7 {
-    width: 100%; }
-
-  .span_5_of_7 {
-    width: 100%; }
-
-  .span_4_of_7 {
-    width: 100%; }
-
-  .span_3_of_7 {
-    width: 100%; }
-
-  .span_2_of_7 {
-    width: 100%; }
-
-  .span_1_of_7 {
-    width: 100%; }
- }
-
 /* ---------------------------------------------------------------------------------- */
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -388,6 +431,9 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     .small-circle img {
       width: 160px;
       height: auto; }
+
+  .big-font {
+    font-size: 1.6em; }
  }
 
 /* Portrait tablet to landscape and desktop */
@@ -412,6 +458,23 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     .small-circle img {
       width: 140px;
       height: auto; }
+
+  .big-font {
+    font-size: 1.6em; }
+
+  #testimonials {
+    width: 100%;
+    height: auto; }
+    #testimonials .column {
+      width: 45%;
+      float: left;
+      height: auto;
+      margin: 0 auto; }
+    #testimonials .testimonial {
+      display: inline-block;
+      background-color: white; }
+      #testimonials .testimonial .quote {
+        font-size: 0.9em; }
  }
 
 /* Landscape phone to portrait tablet */
@@ -451,12 +514,14 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 
   #availability {
     position: relative;
-    margin-top: 30px;
+    display: inline-block;
     right: 0;
+    top: 30px;
     width: 100%;
-    min-height: 45px;
+    height: auto;
     background-color: #F1F1F1;
-    padding-top: 5px; }
+    padding-top: 5px;
+    padding-bottom: 5px; }
     #availability h3, #availability h4 {
       display: inline;
       padding-left: 3%;
@@ -471,6 +536,22 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       font-weight: 200;
       color: #383838;
       font-size: 0.7em; }
+
+  .big-font {
+    font-size: 1.6em; }
+
+  #testimonials {
+    text-align: center;
+    position: relative; }
+    #testimonials .column {
+      width: 100%;
+      margin-bottom: 0; }
+    #testimonials .testimonial {
+      width: 100%;
+      display: inline-block;
+      background-color: white; }
+      #testimonials .testimonial .quote {
+        font-size: 0.9em; }
  }
 
 /* Landscape phones and down */
@@ -554,6 +635,20 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       color: #383838;
       font-size: 0.7em;
       margin-bottom: 5px; }
+
+  #testimonials {
+    width: 100%;
+    height: auto;
+    display: block; }
+    #testimonials .column {
+      width: 100%;
+      height: 500px;
+      margin: 0 auto; }
+    #testimonials .testimonial {
+      display: inline-block;
+      background-color: white; }
+      #testimonials .testimonial .quote {
+        font-size: 0.9em; }
 
   input[type=email], textarea {
     width: 95%; }

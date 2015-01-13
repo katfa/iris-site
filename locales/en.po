@@ -6,17 +6,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "title"
+msgstr "Norwegian Translator"
+
+msgid "norwegian translator"
+msgstr "Your personal and professional Native Norwegian Translator"
+
+msgid "tagline"
+msgstr "High quality translations at affordable rates"
+
 msgid "Contact"
 msgstr "Contact"
 
 msgid "Get in touch"
 msgstr "Get in touch"
 
+msgid "Email"
+msgstr "Your e-mail:"
+
+msgid "Project"
+msgstr "Project name (optional):"
+
+msgid "Message"
+msgstr "Message:"
+
 msgid "About"
 msgstr "About me"
 
-msgid "Email"
-msgstr "Your e-mail"
-
-msgid "Message"
-msgstr "Message"
