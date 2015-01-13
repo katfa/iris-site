@@ -4,6 +4,11 @@
     </div>
     <div class="small-titles">
         <h1>{{gettext "Get in touch"}}</h1>
+        <h2>{{gettext "Get in touch 2"}}</h2>
+
+        <div class="mtl mbn small-font"><span class="bold">{{gettext "My Email"}}</span> <a href="mailto:info@norwegiantranslator.no">info@norwegiantranslator.no</a></div>
+        <div class="mts mbs small-font"><span class="bold">{{gettext "Skype"}}</span> Irisafa</div>
+        <div class="mts mbl small-font italic">{{gettext "Use the form"}}</div>
     </div>
 </div>
 
@@ -17,6 +22,10 @@
 
     <div class="small-titles col span_5_of_7">
         <h1>{{gettext "Get in touch"}}</h1>
+        <h2>{{gettext "Get in touch 2"}}</h2>
+        <div class="mtl mbn small-font"><span class="bold">{{gettext "My Email"}}</span> <a href="mailto:info@norwegiantranslator.no">info@norwegiantranslator.no</a></div>
+        <div class="mts mbs small-font"><span class="bold">{{gettext "Skype"}}</span> Irisafa</div>
+        <div class="mts mbl small-font italic">{{gettext "Use the form"}}</div>
     </div>
 </div>
 
@@ -26,12 +35,12 @@
 
         <form id="contact-form" method="POST" action="/send">
             <div class="input pbs">
-                <label for="email" class="pbs">{{gettext "Email"}}</label>
+                <label for="email" class="pbs">{{gettext "Your Email"}}</label>
                 <input type="email" name="email" id="email" size="40" class="mbm"></input>
             </div>
 
             <div class="input pbs">
-                <label for="project" class="pbs">Project name (optional):</label>
+                <label for="project" class="pbs">{{gettext "Project"}}</label>
                 <input type="text" name="project" id="project" size="40" class="mbm"></input>
             </div>
 

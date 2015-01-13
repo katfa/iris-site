@@ -155,6 +155,9 @@ h1 {
 .italic {
   font-style: italic; }
 
+.bold {
+  font-weight: 700; }
+
 .hidden {
   display: none; }
 
@@ -170,6 +173,9 @@ h1 {
 .shadow {
   box-shadow: 0 0 15px #C1C1C1; }
 
+.white-bg {
+  background-color: white; }
+
 #testimonials {
   position: relative;
   z-index: inherit;
@@ -182,8 +188,7 @@ h1 {
     #testimonials .column .testimonial {
       width: auto;
       height: auto;
-      display: inline-block;
-      background-color: white; }
+      display: inline-block; }
       #testimonials .column .testimonial .quote {
         font-size: 0.9em; }
 
@@ -471,8 +476,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       height: auto;
       margin: 0 auto; }
     #testimonials .testimonial {
-      display: inline-block;
-      background-color: white; }
+      display: inline-block; }
       #testimonials .testimonial .quote {
         font-size: 0.9em; }
  }
@@ -548,8 +552,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       margin-bottom: 0; }
     #testimonials .testimonial {
       width: 100%;
-      display: inline-block;
-      background-color: white; }
+      display: inline-block; }
       #testimonials .testimonial .quote {
         font-size: 0.9em; }
  }
@@ -645,8 +648,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       height: 500px;
       margin: 0 auto; }
     #testimonials .testimonial {
-      display: inline-block;
-      background-color: white; }
+      display: inline-block; }
       #testimonials .testimonial .quote {
         font-size: 0.9em; }
 

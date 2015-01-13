@@ -210,6 +210,10 @@ h1 {
     font-style: italic;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .hidden {
     display: none;
 }
@@ -230,6 +234,10 @@ h1 {
     box-shadow: 0 0 15px #C1C1C1;
 }
 
+.white-bg {
+    background-color: white;
+}
+
 #testimonials {
     position: relative;
     z-index: inherit;
@@ -245,8 +253,6 @@ h1 {
             width: auto;
             height: auto;
             display: inline-block;
-
-            background-color: white;
 
             .quote {
                 font-size: 0.9em;
@@ -510,7 +516,6 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
         }
         .testimonial {
             display: inline-block;
-            background-color: white;
 
             .quote {
                 font-size: 0.9em;
@@ -608,7 +613,6 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
         .testimonial {
             width: 100%;
             display: inline-block;
-            background-color: white;
 
             .quote {
                 font-size: 0.9em;
@@ -739,7 +743,6 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
         }
         .testimonial {
             display: inline-block;
-            background-color: white;
 
             .quote {
                 font-size: 0.9em;
