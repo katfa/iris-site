@@ -514,7 +514,8 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       height: auto; }
 
   .small-titles {
-    margin-left: 3%; }
+    margin-left: 3%;
+    width: 65%; }
 
   #availability {
     position: relative;
@@ -555,6 +556,9 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       display: inline-block; }
       #testimonials .testimonial .quote {
         font-size: 0.9em; }
+
+  input[type=email], input[type=text], textarea {
+    width: 95%; }
  }
 
 /* Landscape phones and down */
@@ -652,6 +656,6 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
       #testimonials .testimonial .quote {
         font-size: 0.9em; }
 
-  input[type=email], textarea {
+  input[type=email], input[type=text], textarea {
     width: 95%; }
  }

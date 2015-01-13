@@ -45,7 +45,7 @@ quality. The translator has no direct contact with the client."
 msgid "About content 4"
 msgstr "By eliminating the expensive middlemen, I am able to offer my clients a lower
 rate, personal follow-up on each project, and a guarantee that your translations are never
-partly automated - simply 100 percent human translation. This creates a constant flow in the language
+partly automated - simply 100%% human translation. This creates a constant flow in the language
 and avoids unnatural sentence structures."
 
 msgid "About content 5"
@@ -53,6 +53,26 @@ msgstr "In addition to working as a translator, I also work as a volunteer and t
 writer. Working as a freelancer enables me to fund my volunteering, and by primarily
 working in countries with a lower cost of living than Scandinavia, also makes it
 possible to keep the pricing at a lower raite without sacrificing quality."
+
+msgid "Pricing"
+msgstr "Pricing"
+
+msgid "Pricing content"
+msgstr "Pricing is discussed and agreed upon for each individual project, depending
+on difficulty, project type and size. Feel free to contact me with information about your
+project, and suggested budget, or any other general inquiries!"
+
+msgid "pro bono"
+msgstr "NGO's and Volunteer Organizations are welcome to contact me about pro bono work!"
+
+msgid "Terms and conditions"
+msgstr "Terms and Conditions"
+
+msgid "Terms and conditions content"
+msgstr "Upon agreeing on all deadlines, milestones and other details, an advance of
+50%% of the project rate needs to be deposited through PayPal or via
+bank transfer. I will continue to work on your project until you are completely satisfied. The remaining
+50%% must be paid before the project can be delivered in its entirety."
 
 msgid "Contact"
 msgstr "Contact"
