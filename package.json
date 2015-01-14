@@ -19,6 +19,7 @@
     "gulp-sass": "^1.2.2",
     "handlebars": "^2.0.0",
     "hapi": "^8.0.0-rc2",
+    "hapi-l10n-gettext": "0.0.8",
     "joi": "^5.1.0",
     "moment-timezone": "^0.2.5",
     "nodemailer": "0.7"
